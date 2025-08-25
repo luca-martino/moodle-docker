@@ -14,9 +14,9 @@ Variable | Value | Description
 *MOODLE_DOCKER_MYSQLDATA* | `/path-to/mysql-data` | **Set the path to MySQL data directory**
 *MOODLE_DOCKER_PHP_VERSION* | `8.4` | **PHP version**
 
-## Run the application using `moodle-docker-compose` and `docker-compose.override`
+## Run the application using `moodle-docker-compose` and `docker-compose.override` or `local.yml`
 ```
-# Example docker-compose.override.yml
+# Example docker-compose.override.yml/local.yml
 services:
   webserver:
     volumes:
@@ -39,6 +39,10 @@ source env.moodle-docker
 ```
 ```
 bin/moodle-docker-compose -f docker-compose.override.yml up -d
+```
+or local.yml if found
+```
+bin/moodle-docker-compose up -d
 ```
 
 
