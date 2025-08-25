@@ -1,0 +1,15 @@
+services:
+  webserver:
+    volumes:
+      - "${MOODLE_DOCKER_MOODLEDATA}:/var/www/moodledata"  
+  db:
+    ports:
+      - 127.0.0.1:3384:3306
+    volumes:
+      - "${MOODLE_DOCKER_MYSQLDATA}:/var/lib/mysql"
+  exttests:
+    profiles:
+      - donotstart
+  selenium:
+    profiles:
+      - donotstart  
