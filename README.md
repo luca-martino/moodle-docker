@@ -1,5 +1,3 @@
-This repository contains Docker override configuration aimed at Moodle developers and testers to easily deploy a testing environment for Moodle.
-
 # Quick reference
 * **Github:**
 https://github.com/moodlehq/moodle-docker
