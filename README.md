@@ -33,10 +33,13 @@ services:
     profiles:
       - donotstart 
 ```
-
+### Usage
+```
 source env.moodle-docker
-
+```
+```
 bin/moodle-docker-compose -f docker-compose.override.yml up -d
+```
 
 
 Access it via `http://localhost:8080`
