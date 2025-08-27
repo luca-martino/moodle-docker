@@ -35,6 +35,7 @@ services:
 ```
 ### Usage
 ```
+mkdir moodle-code ; mkdir moodle-data ; mkdir mysql-data
 source env.moodle-docker
 ```
 ```
