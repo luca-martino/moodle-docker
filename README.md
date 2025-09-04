@@ -5,6 +5,7 @@ https://github.com/moodlehq/moodle-docker
 # Getting started
 First, create a new env file:
 ```
+# Example env.moodle-docker
 # Set the path to Moodle code directory
 export MOODLE_DOCKER_WWWROOT=/path-to/moodle-code
 # Set the path to Moodle data directory
