@@ -4,6 +4,21 @@ https://github.com/moodlehq/moodle-docker
 
 # Getting started
 First, create a new env file:
+```
+# Set the path to Moodle code directory
+export MOODLE_DOCKER_WWWROOT=/path-to/moodle-code
+# Set the path to Moodle data directory
+export MOODLE_DOCKER_MOODLEDATA=/path-to/moodle-data
+# Choose a db server
+export MOODLE_DOCKER_DB=mysql
+# Database flavour
+# MOODLE_DOCKER_DB_VERSION=5.7
+# Set the path to MySQL data directory
+export MOODLE_DOCKER_MYSQLDATA=/path-to/mysql-data
+# PHP version.
+export MOODLE_DOCKER_PHP_VERSION=8.4
+
+```
 # Environment variables
 
 Variable | Value | Description
