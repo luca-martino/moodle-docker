@@ -22,6 +22,8 @@ services:
     volumes:
       - "${MOODLE_DOCKER_MOODLEDATA}:/var/www/moodledata"  
   db:
+    # Add 'platform' for MySQL 5.7 on Apple Silicon
+    # platform: linux/x86_64
     ports:
       - 127.0.0.1:3384:3306
     volumes:
